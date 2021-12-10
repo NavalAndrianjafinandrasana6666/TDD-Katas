@@ -14,7 +14,7 @@ describe("Attributes", () => {
 
   it.skip("should return the correct display name when surname is not given", () => {
     const subject = new Person("John", 10);
-    expect(subject.displayName).toEqual("John Doe");
+    expect(subject.displayName).toEqual("John");
   });
 });
 
@@ -27,7 +27,7 @@ describe("Greetings", () => {
   });
 
   it.skip("should greet a person with surname correctly", () => {
-    const subject = new Person("John", 10)
+    const subject = new Person("John", 10, "Doe")
     const result = greet(subject);
 
     expect(result).toEqual("Hello, John Doe");
