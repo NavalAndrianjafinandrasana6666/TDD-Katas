@@ -9,13 +9,17 @@ A Sample module `src/sample.ts` has been configured along with it's associated t
 
 ## Getting started
 
-```
+```sh
 npm install
 ```
 
 ## Running Tests
 
-```
+```sh
+npm t -- --watch **/person.test.ts
+
+npm t -- --watch
+
 npm t
 ```
 
